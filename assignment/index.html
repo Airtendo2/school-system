@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Hogwarts Faculty</title>
+</head>
+<body>
+<header>
+    <img src="images/image2.png" alt="Hogwarts Logo" id="header-logo">
+    <h1>Hogwarts</h1>
+</header>
+
+    <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="Students Timetables.html">Student Timetables</a></li>
+            <li><a href="Payments Page.html">Payments</a></li>
+			<li><a href="image gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <section>
+	<img src="images/image2.png" alt="Hogwarts Logo" id="header-image">
+        <h2>Welcome to Hogwarts!</h2>
+        <p>Explore the magical world of knowledge and wisdom.</p>
+		<p>Hogwarts is a coeducational, 
+		secondary boarding school, taking children from ages eleven to eighteen,
+		in line with real-world combined secondary and sixth form institutions in Britain. 
+		Education at Hogwarts is not compulsory, with some students being home schooled as stated in the seventh book. Rowling initially said there are about one thousand students at Hogwarts.
+		She later suggested around six hundred, while acknowledging that this number was still inconsistent with the small number of people in Harry's year. 
+		She further explained that this had resulted from her creating only forty characters for Harry's year.
+		</p>
+		
+		<br> 
+		
+		<style>
+        /* Additional styles for the registration form */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        form {
+            background-color: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            width: 50%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        #imagePreviewContainer {
+            display: none;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Student Registration Form</h2>
+    <form action="submit_registration.php" method="POST" enctype="multipart/form-data">
+        <label for="student_number">Student Number:</label>
+        <input type="text" id="student_number" name="student_number" required>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="faculty">Faculty:</label>
+        <select id="faculty" name="faculty" required>
+            <option value="" disabled selected>Select Faculty</option>
+            <option value="Faculty of Arts">Faculty of Arts</option>
+            <option value="Faculty of Science">Faculty of Divine</option>
+            <option value="Faculty of Engineering">Faculty of Felix Felicis</option>
+            <option value="Faculty of Arts">Faculty of Creatures</option>
+            <option value="Faculty of Science">Faculty of Divine</option>
+            <option value="Faculty of Engineering">Faculty of Patronus Charms</option>
+			 <option value="Faculty of Engineering">Faculty of Magical Plants</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="" disabled selected>Select Department</option>
+            <option value="Department of Literature">Department of Magical Sciences</option>
+            <option value="Department of Physics">Department of Wizardry</option>
+            <option value="Department of Computer Science">Department of Magical Creatures</option>
+			<option value="Department of Literature">Department of Alchemy</option>
+            <option value="Department of Physics">Department of Divination</option>
+            <option value="Department of Computer Science">Department of Herbology</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="telephone">Telephone Number:</label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="picture">Upload Picture:</label>
+        <input type="file" id="picture" name="picture" accept="image/*" required>
+
+        <!-- Image preview container -->
+        <div id="imagePreviewContainer">
+            <img id="imagePreview" alt="Image Preview">
+        </div>
+
+        <button type="submit" onclick="showThankYouMessage()">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript function to show thank you message
+        function showThankYouMessage() {
+            alert("Thank you for submitting your registration!");
+        }
+    </script>
+</body>
+		
+	</section>
+    <footer>
+    <p>&copy; 2024 Hogwarts University Of Magic</p>
+    <img id="hogwarts-logo" src="images/image2.png" alt="Hogwarts Logo">
+    <img class="magical-symbol" src="images/image6.png" alt="Magical Symbol 1">
+    <img class="magical-symbol" src="images/image4.png" alt="Magical Symbol 2">
+	<img class="magical-symbol" src="images/image5.png" alt="Magical Symbol 1">
+    <img class="magical-symbol" src="images/image3.png" alt="Magical Symbol 2">
+    <!-- Add more magical symbols as needed -->	
+</footer>
+</body>
+</html>
+
+
